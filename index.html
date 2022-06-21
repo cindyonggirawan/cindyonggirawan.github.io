@@ -1,0 +1,482 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="./images/cindy.png">
+    <title>BELAJAR BERSAMA CINDY</title>
+
+    <!--ICONSOUT-->
+    <link rel="stylesheet" href="https://unicons.iconscout.com/release/v2.1.6/css/unicons.css">
+
+    <!--GOOGLE FONTS-->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+
+    <!--PLYR.IO-->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/CDNSFree2/Plyr/plyr.css"/>
+
+    <!--SWIPER JS-->
+    <link rel="stylesheet" href="https://unpkg.com/swiper@8/swiper-bundle.min.css"/>
+
+    <link rel="stylesheet" href="./css/style.css">
+
+    <style>
+        .containerbg{
+            position: relative;
+            width: 100%;
+            height: 100vh;
+            overflow: hidden;
+        }
+        .bubbles{
+            position: relative;
+            display: flex;
+        }
+        .bubbles span{
+            position: relative;
+            width: 30px;
+            height: 30px;
+            background: #4fc3dc;
+            margin: 0 4px;
+            border-radius: 50%;
+            box-shadow: 0 0 0 10px #4fc3dc44,
+            0 0  50px #4fc3dc,
+            0 0 100px #4fc3dc;
+            animation: animate 15s linear infinite;
+            animation-duration: calc(125s / var(--i));
+        }
+        .bubbles span:nth-child(even){
+            background: #ff2d75;
+            margin: 0 4px;
+            border-radius: 50%;
+            box-shadow: 0 0 0 10px #ff2d7544,
+            0 0  50px #ff2d75,
+            0 0 100px #ff2d75;
+        }
+        @keyframes animate{
+            0%{
+                transform: translateY(100vh) scale(0);
+            }
+            100%{
+                transform: translateY(-10vh) scale(1);
+            }
+        }
+        .header__container{
+            position: absolute;
+            z-index: 10;
+            top: 0;
+        }
+    </style>
+    
+</head>
+<body>
+    <!--NAVBAR-->
+    <nav>
+        <div class="container nav__container">
+            <a href="./index.html">
+                <h4><i class="uil uil-books"></i>BELAJAR BERSAMA CINDY</h4>
+            </a>
+            <ul class="nav__menu" id="nav-two">
+                <li>
+                    <a href="./index.html" class="main__menu"><span>Beranda</span><i class="snmall__box"></i></a>
+                    <audio id="beep-two" controls preload="auto">
+                        <source src="./images/beep.mp3" controls></source>
+                    </audio>
+                </li>
+                <li><a href="./html/about.html" class="main__menu"><span>Pemeran</span><i></i></a></li>
+                <li><a href="./html/courses.html" class="main__menu"><span>Film</span><i></i></a></li>
+                <li><a href="./html/contact.html" class="main__menu"><span>Kontak</span><i></i></a></li>
+            </ul>
+            <button id="open-menu-btn" onmousedown = "clicks.play()"><i class="uil uil-bars"></i></button>
+            <button id="close-menu-btn" onmousedown = "clicks.play()"><i class="uil uil-multiply"></i></button>
+        </div>
+    </nav>
+    <!--END OF NAVBAR-->
+
+    <!--HEADER-->
+    <header>
+        <div class="containerbg">
+            <div class="bubbles">
+                <span style="--i:11;"></span>
+                <span style="--i:12;"></span>
+                <span style="--i:24;"></span>
+                <span style="--i:10;"></span>
+                <span style="--i:14;"></span>
+                <span style="--i:23;"></span>
+                <span style="--i:18;"></span>
+                <span style="--i:16;"></span>
+                <span style="--i:19;"></span>
+                <span style="--i:20;"></span>
+                <span style="--i:22;"></span>
+                <span style="--i:25;"></span>
+                <span style="--i:18;"></span>
+                <span style="--i:21;"></span>
+                <span style="--i:15;"></span>
+                <span style="--i:13;"></span>
+                <span style="--i:26;"></span>
+                <span style="--i:17;"></span>
+                <span style="--i:13;"></span>
+                <span style="--i:28;"></span>
+                <span style="--i:11;"></span>
+                <span style="--i:12;"></span>
+                <span style="--i:24;"></span>
+                <span style="--i:10;"></span>
+                <span style="--i:14;"></span>
+                <span style="--i:23;"></span>
+                <span style="--i:18;"></span>
+                <span style="--i:16;"></span>
+                <span style="--i:19;"></span>
+                <span style="--i:20;"></span>
+                <span style="--i:22;"></span>
+                <span style="--i:25;"></span>
+                <span style="--i:18;"></span>
+                <span style="--i:21;"></span>
+                <span style="--i:15;"></span>
+                <span style="--i:13;"></span>
+                <span style="--i:26;"></span>
+                <span style="--i:17;"></span>
+                <span style="--i:13;"></span>
+                <span style="--i:28;"></span>
+            </div>
+        </div>
+        <div class="container">
+            <div class="header__container">
+                <div class="header__left">
+                    <h1>Kebutuhan belajarmu ada disini!</h1>
+                    <p>
+                        Belajar Bersama Cindy adalah sarana belajar online yang menyediakan layanan berupa video bimbingan belajar mandiri untuk membantu kamu dalam meningkatkan pemahaman di setiap materi tentang Multimedia secara lengkap dan berurutan.
+                    </p>
+                    <div id="btn__wrapper">
+                        <a href="./html/courses.html" class="btn btn-primary">Ayo Mulai</a>
+                        <audio id="beep-three" controls preload="auto">
+                            <source src="./images/magic.mp3" controls></source>
+                        </audio>
+                    </div>
+                </div>
+    
+                <div class="header__right">
+                    <div class="header__right-image">
+                        <img src="./images/header.svg" alt="">
+                    </div>
+                </div>
+            </div>  
+        </div>
+    </header>
+    <!--END OF HEADER-->
+
+    <!--CATEGORIES-->
+    <section class="categories">
+        <div class="container categories__container">
+            <div class="categories__left">
+                <h1>Kategori Elemen</h1>
+                <p>
+                    Pembelajaran Sistem Multimedia dibagi menjadi beberapa bagian dengan tujuan agar pelajar dapat memahami setiap materi secara lebih jelas serta mampu menerapkan desain yang nyaman dan mudah digunakan oleh user.
+                </p>
+            </div>
+
+            <div class="categories__right">
+                <article class="category">
+                    <span class="category__icon"><i class="uil uil-text-fields"></i></span>
+                    <h5>Teks</h5>
+                    <p>Teks merupakan elemen yang berisi kumpulan kalimat untuk menyampaikan bacaan.</p>
+                </article>
+
+                <article class="category">
+                    <span class="category__icon"><i class="uil uil-scenery"></i></span>
+                    <h5>Gambar</h5>
+                    <p>Gambar merupakan elemen yang bertujuan untuk menyajikan informasi visual.</p>
+                </article>
+
+                <article class="category">
+                    <span class="category__icon"><i class="uil uil-volume"></i></span>
+                    <h5>Audio</h5>
+                    <p>Audio merupakan elemen yang menyampaikan bunyi untuk menarasikan pesan.</p>
+                </article>
+
+                <article class="category">
+                    <span class="category__icon"><i class="uil uil-video"></i></span>
+                    <h5>Video</h5>
+                    <p>Video merupakan elemen hasil rekaman kamera dengan memvisualisasikan kenyataan.</p>
+                </article>
+
+                <article class="category">
+                    <span class="category__icon"><i class="uil uil-pen"></i></span>
+                    <h5>Animasi</h5>
+                    <p>Animasi merupakan elemen yang membuat suatu gambar atau tulisan terlihat lebih hidup.</p>
+                </article>
+            </div>
+        </div>
+    </section>
+    <!--END OF CATEGORIES-->
+
+    <!--COURSES-->
+    <section class="coursevideo">
+        <div class="container">
+            <h2 class="videotitle">Trailer</h2>
+            <div class="outer">
+                <iframe width="100%" height="100%" src="https://www.youtube.com/embed/IL8PG9UdbTY?autoplay=1" allowfullscreen allowtransparency allow="autoplay"></iframe>
+            </div>
+            <p class="synopsis">
+                Sinopsis:
+                <br>
+                Seorang siswa merasa kesulitan dalam mencerna pelajaran Multimedia yang diajarkan secara online melalui zoom. Dia sudah mencoba untuk belajar kembali, namun masih banyak kebingungan dan nilainya kurang memuaskan. Akibat dari kuatnya tekad untuk memahami materi, dia berselancar di internet dan menemukan sebuah iklan yang merupakan trailer channel dan website yang menyediakan video-video pembelajaran interaktif, disertai dengan artikel yang menarik dan lengkap, sehingga belajar menjadi lebih mudah dan menyenangkan.
+            </p>
+        </div>
+    </section>
+    <!--END OF COURSES-->
+
+    <!--FAQ-->
+    <section class="faqs">
+        <h2>Pertanyaan Umum</h2>
+        <div class="container faqs__container">
+            <article class="faq">
+                <div class="faq__icon"><i class="uil uil-plus"></i></div>
+                <div class="question__answer">
+                    <h4>Siapa saja yang bisa menjadi murid disini?</h4>
+                    <p>
+                        Pengguna dari tingkat SD, SMP, SMA, Perguruan Tinggi, hingga khalayak umum yang pernah berlangganan paket dapat menjadi murid dan mengakses materi yang kami sediakan untuk mendukung kegiatan belajar.
+                    </p>
+                </div>
+            </article>
+
+            <article class="faq">
+                <div class="faq__icon"><i class="uil uil-plus"></i></div>
+                <div class="question__answer">
+                    <h4>Apa saja keuntungan berlangganan disini?</h4>
+                    <p>
+                        Website ini menyediakan materi dalam bentuk video, kuis, dan infografis agar lebih mudah dipahami. Pengguna juga dapat menanyakan soal dan materi yang sulit kepada tutor secara online.
+                    </p>
+                </div>
+            </article>
+
+            <article class="faq">
+                <div class="faq__icon"><i class="uil uil-plus"></i></div>
+                <div class="question__answer">
+                    <h4>Apa saja metode pembayaran yang tersedia?</h4>
+                    <p>
+                        Pengguna dapat melakukan pembayaran melalui Bank Transfer (BCA/BNI/Mandiri/BRI), Kartu Kredit, Indomaret, atau Alfamart Group, Direct Debit, Go-Pay, OVO, Akulaku, Kredivo, dan KreditPintar.
+                    </p>
+                </div>
+            </article>
+
+            <article class="faq">
+                <div class="faq__icon"><i class="uil uil-plus"></i></div>
+                <div class="question__answer">
+                    <h4>Apakah Kode Diskon dan Kode Voucher itu sama?</h4>
+                    <p>
+                        Kode diskon adalah kode dengan potongan harga dalam bentuk persen (%) atau nominal. Sedangkan kode voucher, digunakan untuk mengakses produk kami secara bebas tergantung jenis voucher yang kamu punya.
+                    </p>
+                </div>
+            </article>
+
+            <article class="faq">
+                <div class="faq__icon"><i class="uil uil-plus"></i></div>
+                <div class="question__answer">
+                    <h4>Bagaimana kalau pembayaran belum terkonfirmasi?</h4>
+                    <p>
+                        Coba lakukan pengecekan pada paket yang dibeli. Pastikan pengguna login dengan email pembelian dan memilih jenjang yang sesuai. Apabila ada kendala, silakan menghubungi layanan pelangganan.
+                    </p>
+                </div>
+            </article>
+
+            <article class="faq">
+                <div class="faq__icon"><i class="uil uil-plus"></i></div>
+                <div class="question__answer">
+                    <h4>Apakah saya dapat mencoba secara gratis?</h4>
+                    <p>
+                        Sebelum memutuskan untuk berlangganan, pengguna dapat menonton video secara gratis untuk beberapa materi, latihan topik, dan tryout yang memiliki label 'Free' di setiap mata pelajaran.
+                    </p>
+                </div>
+            </article>
+        </div>
+    </section>
+    <!--END OF FAQ-->
+
+    <!--TESTIMONIALS-->
+    <section class="container testimonials__container mySwiper">
+        <h2>Testimoni</h2>
+        <div class="swiper-wrapper">
+            <article class="testimonial swiper-slide">
+                <div class="avatar">
+                    <img src="./images/avatar1.png" alt="">
+                </div>
+                <div class="testimonial__info">
+                    <h5>Richard</h5>
+                    <small>Student</small>
+                </div>
+                <div class="testimonial__body">
+                    <p>Pelajarannya sangat mudah dipahami! Sekarang saya sangat cepat dalam mengerjakan pekerjaan rumah, sehingga jarang dimarahi Mama.</p>
+                </div>
+            </article>
+
+            <article class="testimonial swiper-slide">
+                <div class="avatar">
+                    <img src="./images/avatar2.png" alt="">
+                </div>
+                <div class="testimonial__info">
+                    <h5>Alicia</h5>
+                    <small>Student</small>
+                </div>
+                <div class="testimonial__body">
+                    <p>Aku suka animasi yang ditayangkan, soalnya mirip dengan kartun dan menonton kartun sekaligus belajar itu menyenangkan!</p>
+                </div>
+            </article>
+
+            <article class="testimonial swiper-slide">
+                <div class="avatar">
+                    <img src="./images/avatar3.png" alt="">
+                </div>
+                <div class="testimonial__info">
+                    <h5>Natasya</h5>
+                    <small>Student</small>
+                </div>
+                <div class="testimonial__body">
+                    <p>Pembawaan materinya tidak terlalu cepat, sehingga saya dapat perlahan-lahan memahami setiap kalimat yang disuarakan.</p>
+                </div>
+            </article>
+
+            <article class="testimonial swiper-slide">
+                <div class="avatar">
+                    <img src="./images/avatar4.png" alt="">
+                </div>
+                <div class="testimonial__info">
+                    <h5>Chris</h5>
+                    <small>Student</small>
+                </div>
+                <div class="testimonial__body">
+                    <p>Saya sebenarnya malas untuk belajar, namun setiap kali channel Belajar Bersama Cindy upload video baru, saya penasaran dan membukanya.</p>
+                </div>
+            </article>
+
+            <article class="testimonial swiper-slide">
+                <div class="avatar">
+                    <img src="./images/avatar5.png" alt="">
+                </div>
+                <div class="testimonial__info">
+                    <h5>George</h5>
+                    <small>Student</small>
+                </div>
+                <div class="testimonial__body">
+                    <p>Dari kecil, saya tertarik dengan desain dan dengan adanya website ini, saya semakin paham dasar-dasar pengetahuan Sistem Multimedia.</p>
+                </div>
+            </article>
+
+            <article class="testimonial swiper-slide">
+                <div class="avatar">
+                    <img src="./images/avatar6.png" alt="">
+                </div>
+                <div class="testimonial__info">
+                    <h5>Jane</h5>
+                    <small>Student</small>
+                </div>
+                <div class="testimonial__body">
+                    <p>Bintang 5! Bravo! Aku sampai berhasil mengajari teman tentang beberapa materi yang baru. Terima kasih Belajar Bersama Cindy!</p>
+                </div>
+            </article>
+        </div>
+        <div class="swiper-pagination"></div>
+    </section>
+    <!--END OF TESTIMONIALS-->
+
+    <!--FOOTER-->
+    <footer>
+        <div class="container footer__container">
+            <div class="footer__1">
+                <a href="./index.html" class="footer__logo"><h4>BELAJAR BERSAMA CINDY</h4></a>
+                <p>
+                    Kami menciptakan peluang untuk memperkaya minat dan pengetahuan anak bangsa melalui pembelajaran video interaktif.
+                </p>
+            </div>
+
+            <div class="footer__2">
+                <h4>Jelajahi</h4>
+                <ul class="permalinks">
+                    <li><a href="./index.html">Beranda</a></li>
+                    <li><a href="./html/about.html">Pemeran</a></li>
+                    <li><a href="./html/courses.html">Film</a></li>
+                    <li><a href="./html/contact.html">Kontak</a></li>
+                </ul>
+            </div>
+
+            <div class="footer__3">
+                <h4>Privasi</h4>
+                <ul class="privacy">
+                    <li><a href="#">Kebijakan Privasi</a></li>
+                    <li><a href="#">Syarat dan Ketentuan</a></li>
+                    <li><a href="#">Kebijakan Pengembalian</a></li>
+                </ul>
+            </div>
+
+            <div class="footer__4">
+                <h4>Kontak</h4>
+                <div>
+                    <p>+01 234 567 8910</p>
+                    <p>belajarbersama@cindy.com</p>
+                </div>
+
+                <ul class="footer__socials">
+                    <li>
+                        <a href="#"><i class="uil uil-facebook-f"></i></a>
+                    </li>
+                    <li>
+                        <a href="#"><i class="uil uil-instagram-alt"></i></a>
+                    </li>
+                    <li>
+                        <a href="#"><i class="uil uil-twitter"></i></a>
+                    </li>
+                    <li>
+                        <a href="#"><i class="uil uil-linkedin-alt"></i></a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+        <div class="footer__copyright">
+            <small>Copyright 2022 &copy; BELAJAR BERSAMA CINDY</small>
+        </div>
+    </footer>
+    <!--END OF FOOTER-->
+
+    <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.5.2/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/plyr/3.6.7/plyr.min.js"></script>
+    <script src="https://unpkg.com/swiper@8/swiper-bundle.min.js"></script>
+    <script src="./js/main.js"></script>
+
+    <script>
+        var swiper = new Swiper(".mySwiper", {
+            slidesPerView: 1,
+            spaceBetween: 30,
+            pagination: {
+                el: ".swiper-pagination",
+                clickable: true,
+            },
+
+            breakpoints: {
+                600: {
+                    slidesPerView: 2
+                }
+            }
+        });
+
+        var controls =
+        [
+          'play-large',
+          'play',
+          'fast-forward',
+          'progress',
+          'current-time',
+          'duration',
+          'mute',
+          'volume',
+          'captions',
+          'settings',
+          'pip',
+          'airplay',
+          'download',
+          'fullscreen'
+        ];
+        const player = new Plyr('.vid1',{controls});
+    </script>
+</body>
+</html>
